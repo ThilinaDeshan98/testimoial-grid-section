@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  padding: 1rem;
+}
+
+.cards {
+  width: 95%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .cards {
+    max-width: 75%;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.cards .card {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.462);
+}
+.cards .purple {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+.cards .purple .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cards .purple .profile .img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.cards .purple .profile .img-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.cards .purple .profile .avatar-name p {
+  color: white;
+}
+.cards .purple .profile .avatar-name .verified {
+  color: rgba(255, 255, 255, 0.7);
+}
+.cards .purple .quotes {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+}
+.cards .purple h1 {
+  font-size: 1.3rem;
+  color: white;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+.cards .purple .description {
+  color: rgba(255, 255, 255, 0.504);
+}
+.cards .very-dark-grayish-blue {
+  background-color: hsl(217, 19%, 35%);
+}
+.cards .white {
+  background-color: white;
+}
+.cards .white h1 {
+  color: hsl(217, 19%, 35%) !important;
+}
+.cards .white p {
+  color: hsl(217, 19%, 35%) !important;
+}
+.cards .white .description {
+  color: hsla(217, 19%, 35%, 0.5) !important;
+}
+.cards .white .avatar-name .verified {
+  color: hsla(217, 19%, 35%, 0.7) !important;
+}
+.cards .very-dark-blackish-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+
+@media (min-width: 992px) {
+  .first {
+    grid-column: span 2;
+  }
+  .last {
+    grid-column: 4/span 2;
+    grid-row: 1/span 2;
+  }
+  .very-dark-blackish-blue {
+    grid-column: 2/4;
+  }
+  .third {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 768px) {
+  .first {
+    grid-column: 1/4;
+  }
+  .very-dark-blackish-blue {
+    grid-column: 2/5;
+  }
+  .last {
+    grid-row: 3/span 2;
+    grid-column: 1/5;
+  }
+}
+@media (min-width: 992px) {
+  .first {
+    grid-column: span 2;
+  }
+  .last {
+    grid-column: 4/5;
+    grid-row: 1/span 2;
+  }
+  .very-dark-blackish-blue {
+    grid-column: span 2;
+  }
+}/*# sourceMappingURL=styles.css.map */
